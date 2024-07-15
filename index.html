@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Jonnala Sai Maneesh Kumar</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Portfolio.</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="intro" id="home">
+            <div class="intro-text">
+                <h1>Hello, It's Me</h1>
+                <h2>Jonnala Sai Maneesh Kumar</h2>
+                <p>I'm a passionate technology enthusiast with extensive experience in merging technology with real-world challenges.</p>
+                <a href="#about" class="btn">More About Me</a>
+            </div>
+            <div id="canvas-container"></div>
+        </div>
+    </header>
+    <section id="about" class="parallax">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <p>My name is Jonnala Sai Maneesh Kumar, born on 27/07/2001. I have completed my B.Tech in ECE from CVR College of Engineering in 2023 and currently working at Mu Sigma. I am about to join MTech at SRM AP in VLSI Design this August. I am deeply passionate about merging technology with real-world challenges.</p>
+            <div class="about-img-container">
+                <img src="about.jpg" alt="About Me">
+            </div>
+        </div>
+    </section>
+    <section id="projects" class="parallax">
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <h3>Farming Robot</h3>
+                <p>Using machine learning to classify and remove weeds while protecting crops.</p>
+            </div>
+            <div class="project-card">
+                <h3>3D Printer</h3>
+                <p>Cost-effective 3D printer using Arduino.</p>
+            </div>
+            <div class="project-card">
+                <h3>Innovative Toys</h3>
+                <p>Innovative toy designs for Toycathon organized by the Government of India and AICTE.</p>
+            </div>
+        </div>
+    </section>
+    <section id="publications" class="parallax">
+        <h2>Publications</h2>
+        <div class="publications-container">
+            <div class="publication-card">
+                <h3><a href="https://www.sciencedirect.com/science/article/pii/S2214785323046709" target="_blank">Publication 1</a></h3>
+                <p>PLA material based development and advancement of low cost 3D printer using Fused Deposition Method, Materials Today Proceedings, 2023</p>
+            </div>
+            <div class="publication-card">
+                <h3><a href="https://ijisrt.com/integrating-robotics-and-computer-vision-for-precision-agriculture-an-autonomous-system-for-weed-control-and-plant-health-monitoring" target="_blank">Publication 2</a></h3>
+                <p>Weed extraction autonomous robot using Machine Learning, IJISRT, 2023</p>
+            </div>
+            <div class="publication-card">
+                <h3><a href="https://cvr.ac.in/ojs/index.php/cvracin/article/view/847" target="_blank">Publication 3</a></h3>
+                <p>Breaking the Boundaries - Using DNA Technologies to Advance Computing, CVR college journal, 2023</p>
+            </div>
+        </div>
+    </section>
+    
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" required><br>
+        <label for="description">Description:</label><br>
+        <textarea id="description" name="description" required></textarea><br>
+        <button type="submit">Submit</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
